@@ -1,0 +1,62 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    /* border: 2px solid black; */
+    width: 800px;
+    height: 600px;
+    position: relative;
+
+}
+
+.sub {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+}
+
+button {
+    font-size: 25px;
+    padding: 30px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+.sub2 img {
+    /* border: 2px solid black;     */
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    transition: 0.8s ease;
+}
+
+@keyframes rotator {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.slow:hover~.sub2 img {
+    animation: rotator 4s infinite linear;
+}
+
+.medium:hover~.sub2 img {
+    animation: rotator 2s infinite linear;
+}
+
+.speed:hover~.sub2 img {
+    animation: rotator 1s infinite linear;
+}
+
+.full-speed:hover~.sub2 img {
+    animation: rotator 0.5s infinite linear;
+}

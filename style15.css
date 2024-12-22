@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 400px;
+    width: 600px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+
+
+
+}
+
+.item {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+
+
+}
+
+@keyframes music {
+    from {}
+
+    to {
+        height: 150px;
+    }
+}
+
+.a,
+.c,
+.e,
+.g,
+.i {
+    animation: music 0.3s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+.b,
+.d,
+.f,
+.h,
+.j {
+    animation: music 0.2s linear infinite;
+    animation-direction: alternate;
+}
